@@ -14,6 +14,18 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/about', function () {
+    return view('about');
+});
+Route::get('/contactus', function () {
+    return view('contact');
+});
+Route::get('/events', function () {
+    return view('events');
+});
+Route::get('/downloads', function () {
+    return view('downloads');
+});
 
 Auth::routes();
 

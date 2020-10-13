@@ -2197,7 +2197,111 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      dialog: false,
+      date: new Date().toISOString().substr(0, 10),
+      menu: false,
+      modal: false
+    };
+  },
+  computed: {}
+});
 
 /***/ }),
 
@@ -2616,6 +2720,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2628,7 +2736,7 @@ __webpack_require__.r(__webpack_exports__);
       }, {
         title: "Events",
         icon: "mdi-calendar-multiple",
-        route: '/events'
+        route: "/events"
       }, {
         title: "Documents",
         icon: "mdi-text-box-plus"
@@ -7124,7 +7232,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.nav {\n  background: #fff !important;\n}\n", ""]);
+exports.push([module.i, "\n.nav {\n    background: #fff !important;\n}\n", ""]);
 
 // exports
 
@@ -39733,377 +39841,561 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _c("div", { staticClass: "content" }, [
+      _c("div", { staticClass: "container-fluid" }, [
+        _c("div", { staticClass: "row" }),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass:
+              "_1adminOverveiw_table_recent _box_shadow _border_radious _mar_b30 _p20"
+          },
+          [
+            _c(
+              "p",
+              { staticClass: "_title0" },
+              [
+                _vm._v(
+                  "\n                    Trade Events\n\n                    "
+                ),
+                _c(
+                  "v-dialog",
+                  {
+                    attrs: { persistent: "", "max-width": "600px" },
+                    scopedSlots: _vm._u([
+                      {
+                        key: "activator",
+                        fn: function(ref) {
+                          var on = ref.on
+                          var attrs = ref.attrs
+                          return [
+                            _c(
+                              "v-btn",
+                              _vm._g(
+                                _vm._b(
+                                  {
+                                    staticClass: "ml-3",
+                                    attrs: {
+                                      small: "",
+                                      color: "green darken-3",
+                                      dark: ""
+                                    }
+                                  },
+                                  "v-btn",
+                                  attrs,
+                                  false
+                                ),
+                                on
+                              ),
+                              [
+                                _c("v-icon", [_vm._v("mdi-map-marker-plus")]),
+                                _vm._v(
+                                  "Add\n                                Event\n                            "
+                                )
+                              ],
+                              1
+                            )
+                          ]
+                        }
+                      }
+                    ]),
+                    model: {
+                      value: _vm.dialog,
+                      callback: function($$v) {
+                        _vm.dialog = $$v
+                      },
+                      expression: "dialog"
+                    }
+                  },
+                  [
+                    _vm._v(" "),
+                    _c(
+                      "v-card",
+                      [
+                        _c("v-card-title", [
+                          _c("span", { staticClass: "headline" }, [
+                            _vm._v("Create New Event")
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "v-card-text",
+                          [
+                            _c(
+                              "v-container",
+                              [
+                                _c(
+                                  "v-row",
+                                  [
+                                    _c(
+                                      "v-col",
+                                      {
+                                        attrs: {
+                                          cols: "12",
+                                          sm: "12",
+                                          md: "12"
+                                        }
+                                      },
+                                      [
+                                        _c("v-text-field", {
+                                          attrs: {
+                                            outlined: "",
+                                            label: "Event Name *",
+                                            color: "green darken-4",
+                                            hint: "Event Name is Required",
+                                            required: ""
+                                          }
+                                        })
+                                      ],
+                                      1
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "v-col",
+                                      {
+                                        attrs: { cols: "12", sm: "12", md: "6" }
+                                      },
+                                      [
+                                        _c("v-text-field", {
+                                          attrs: {
+                                            outlined: "",
+                                            "prepend-inner-icon":
+                                              "mdi-map-marker",
+                                            label: "Venue *",
+                                            required: "",
+                                            color: "green darken-4",
+                                            hint: "Events Location is required"
+                                          }
+                                        })
+                                      ],
+                                      1
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "v-col",
+                                      {
+                                        attrs: { cols: "12", sm: "12", md: "6" }
+                                      },
+                                      [
+                                        _c(
+                                          "v-menu",
+                                          {
+                                            ref: "menu",
+                                            attrs: {
+                                              "close-on-content-click": false,
+                                              "return-value": _vm.date,
+                                              transition: "scale-transition",
+                                              "offset-y": "",
+                                              "min-width": "290px"
+                                            },
+                                            on: {
+                                              "update:returnValue": function(
+                                                $event
+                                              ) {
+                                                _vm.date = $event
+                                              },
+                                              "update:return-value": function(
+                                                $event
+                                              ) {
+                                                _vm.date = $event
+                                              }
+                                            },
+                                            scopedSlots: _vm._u([
+                                              {
+                                                key: "activator",
+                                                fn: function(ref) {
+                                                  var on = ref.on
+                                                  var attrs = ref.attrs
+                                                  return [
+                                                    _c(
+                                                      "v-text-field",
+                                                      _vm._g(
+                                                        _vm._b(
+                                                          {
+                                                            attrs: {
+                                                              label:
+                                                                "Picker in menu",
+                                                              "prepend-inner-icon":
+                                                                "mdi-calendar",
+                                                              readonly: "",
+                                                              outlined: ""
+                                                            },
+                                                            model: {
+                                                              value: _vm.date,
+                                                              callback: function(
+                                                                $$v
+                                                              ) {
+                                                                _vm.date = $$v
+                                                              },
+                                                              expression: "date"
+                                                            }
+                                                          },
+                                                          "v-text-field",
+                                                          attrs,
+                                                          false
+                                                        ),
+                                                        on
+                                                      )
+                                                    )
+                                                  ]
+                                                }
+                                              }
+                                            ]),
+                                            model: {
+                                              value: _vm.menu,
+                                              callback: function($$v) {
+                                                _vm.menu = $$v
+                                              },
+                                              expression: "menu"
+                                            }
+                                          },
+                                          [
+                                            _vm._v(" "),
+                                            _c(
+                                              "v-date-picker",
+                                              {
+                                                attrs: {
+                                                  "no-title": "",
+                                                  scrollable: ""
+                                                },
+                                                model: {
+                                                  value: _vm.date,
+                                                  callback: function($$v) {
+                                                    _vm.date = $$v
+                                                  },
+                                                  expression: "date"
+                                                }
+                                              },
+                                              [
+                                                _c("v-spacer"),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "v-btn",
+                                                  {
+                                                    attrs: {
+                                                      text: "",
+                                                      color: "primary"
+                                                    },
+                                                    on: {
+                                                      click: function($event) {
+                                                        _vm.menu = false
+                                                      }
+                                                    }
+                                                  },
+                                                  [
+                                                    _vm._v(
+                                                      "\n                                                        Cancel\n                                                    "
+                                                    )
+                                                  ]
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "v-btn",
+                                                  {
+                                                    attrs: {
+                                                      text: "",
+                                                      color: "primary"
+                                                    },
+                                                    on: {
+                                                      click: function($event) {
+                                                        return _vm.$refs.menu.save(
+                                                          _vm.date
+                                                        )
+                                                      }
+                                                    }
+                                                  },
+                                                  [
+                                                    _vm._v(
+                                                      "\n                                                        OK\n                                                    "
+                                                    )
+                                                  ]
+                                                )
+                                              ],
+                                              1
+                                            )
+                                          ],
+                                          1
+                                        )
+                                      ],
+                                      1
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "v-col",
+                                      { attrs: { cols: "12" } },
+                                      [
+                                        _c("v-textarea", {
+                                          attrs: {
+                                            outlined: "",
+                                            color: "green darken-4"
+                                          },
+                                          scopedSlots: _vm._u([
+                                            {
+                                              key: "label",
+                                              fn: function() {
+                                                return [
+                                                  _c("div", [
+                                                    _vm._v(
+                                                      "\n                                                        Events Discription\n                                                        "
+                                                    ),
+                                                    _c("small", [
+                                                      _vm._v("(optional)")
+                                                    ])
+                                                  ])
+                                                ]
+                                              },
+                                              proxy: true
+                                            }
+                                          ])
+                                        })
+                                      ],
+                                      1
+                                    )
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c("small", [_vm._v("*indicates required field")])
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "v-card-actions",
+                          [
+                            _c("v-spacer"),
+                            _vm._v(" "),
+                            _c(
+                              "v-btn",
+                              {
+                                attrs: { color: "error darken-4", dark: "" },
+                                on: {
+                                  click: function($event) {
+                                    _vm.dialog = false
+                                  }
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "\n                                    Close\n                                "
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "v-btn",
+                              {
+                                attrs: { color: "green darken-4", dark: "" },
+                                on: {
+                                  click: function($event) {
+                                    _vm.dialog = false
+                                  }
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "\n                                    Add Event\n                                "
+                                )
+                              ]
+                            )
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _vm._m(0)
+          ]
+        )
+      ])
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("div", { staticClass: "content" }, [
-        _c("div", { staticClass: "container-fluid" }, [
-          _c("div", { staticClass: "row" }),
+    return _c("div", { staticClass: "_overflow _table_div" }, [
+      _c("table", { staticClass: "_table" }, [
+        _c("tr", [
+          _c("th", [_vm._v("Date")]),
           _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "_1adminOverveiw_table_recent _box_shadow _border_radious _mar_b30 _p20"
-            },
-            [
-              _c("p", { staticClass: "_title0" }, [_vm._v("Trade Events")]),
-              _vm._v(" "),
-              _c("div", { staticClass: "_overflow _table_div" }, [
-                _c("table", { staticClass: "_table" }, [
-                  _c("tr", [
-                    _c("th", [_vm._v("Date")]),
-                    _vm._v(" "),
-                    _c("th", [_vm._v("Title")]),
-                    _vm._v(" "),
-                    _c("th", [_vm._v("Category")]),
-                    _vm._v(" "),
-                    _c("th", [_vm._v("Action")])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("25-05-19")]),
-                    _vm._v(" "),
-                    _c("td", { staticClass: "_table_name" }, [
-                      _vm._v(
-                        '\n                Manhattan\'s art center "Shed" opening ceremony\n              '
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("Economy")]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "_btn _action_btn view_btn1",
-                          attrs: { type: "button" }
-                        },
-                        [_vm._v("\n                  View\n                ")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "_btn _action_btn edit_btn1",
-                          attrs: { type: "button" }
-                        },
-                        [_vm._v("\n                  Edit\n                ")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "_btn _action_btn make_btn2",
-                          attrs: { type: "button" }
-                        },
-                        [
-                          _vm._v(
-                            "\n                  Make Features\n                "
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "_btn _action_btn make_btn3",
-                          attrs: { type: "button" }
-                        },
-                        [
-                          _vm._v(
-                            "\n                  Make Card\n                "
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "_btn _action_btn make_btn1",
-                          attrs: { type: "button" }
-                        },
-                        [_vm._v("\n                  Delete\n                ")]
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("25-05-19")]),
-                    _vm._v(" "),
-                    _c("td", { staticClass: "_table_name" }, [
-                      _vm._v(
-                        "\n                Are Trump era is having an impact on what 's future voters\n              "
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("Social")]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "_btn _action_btn view_btn1",
-                          attrs: { type: "button" }
-                        },
-                        [_vm._v("\n                  View\n                ")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "_btn _action_btn edit_btn1",
-                          attrs: { type: "button" }
-                        },
-                        [_vm._v("\n                  Edit\n                ")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "_btn _action_btn make_btn2",
-                          attrs: { type: "button" }
-                        },
-                        [
-                          _vm._v(
-                            "\n                  Make Features\n                "
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "_btn _action_btn make_btn3",
-                          attrs: { type: "button" }
-                        },
-                        [
-                          _vm._v(
-                            "\n                  Make Card\n                "
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "_btn _action_btn make_btn1",
-                          attrs: { type: "button" }
-                        },
-                        [_vm._v("\n                  Delete\n                ")]
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("25-05-19")]),
-                    _vm._v(" "),
-                    _c("td", { staticClass: "_table_name" }, [
-                      _vm._v(
-                        '\n                Manhattan\'s art center "Shed" opening ceremony\n              '
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("Economy")]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "_btn _action_btn view_btn1",
-                          attrs: { type: "button" }
-                        },
-                        [_vm._v("\n                  View\n                ")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "_btn _action_btn edit_btn1",
-                          attrs: { type: "button" }
-                        },
-                        [_vm._v("\n                  Edit\n                ")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "_btn _action_btn make_btn2",
-                          attrs: { type: "button" }
-                        },
-                        [
-                          _vm._v(
-                            "\n                  Make Features\n                "
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "_btn _action_btn make_btn3",
-                          attrs: { type: "button" }
-                        },
-                        [
-                          _vm._v(
-                            "\n                  Make Card\n                "
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "_btn _action_btn make_btn1",
-                          attrs: { type: "button" }
-                        },
-                        [_vm._v("\n                  Delete\n                ")]
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("25-05-19")]),
-                    _vm._v(" "),
-                    _c("td", { staticClass: "_table_name" }, [
-                      _vm._v(
-                        "\n                Are Trump era is having an impact on what 's future voters\n              "
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("Social")]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "_btn _action_btn view_btn1",
-                          attrs: { type: "button" }
-                        },
-                        [_vm._v("\n                  View\n                ")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "_btn _action_btn edit_btn1",
-                          attrs: { type: "button" }
-                        },
-                        [_vm._v("\n                  Edit\n                ")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "_btn _action_btn make_btn2",
-                          attrs: { type: "button" }
-                        },
-                        [
-                          _vm._v(
-                            "\n                  Make Features\n                "
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "_btn _action_btn make_btn3",
-                          attrs: { type: "button" }
-                        },
-                        [
-                          _vm._v(
-                            "\n                  Make Card\n                "
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "_btn _action_btn make_btn1",
-                          attrs: { type: "button" }
-                        },
-                        [_vm._v("\n                  Delete\n                ")]
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("25-05-19")]),
-                    _vm._v(" "),
-                    _c("td", { staticClass: "_table_name" }, [
-                      _vm._v(
-                        "\n                Are Trump era is having an impact on what 's future voters\n              "
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("Social")]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "_btn _action_btn view_btn1",
-                          attrs: { type: "button" }
-                        },
-                        [_vm._v("\n                  View\n                ")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "_btn _action_btn edit_btn1",
-                          attrs: { type: "button" }
-                        },
-                        [_vm._v("\n                  Edit\n                ")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "_btn _action_btn make_btn2",
-                          attrs: { type: "button" }
-                        },
-                        [
-                          _vm._v(
-                            "\n                  Make Features\n                "
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "_btn _action_btn make_btn3",
-                          attrs: { type: "button" }
-                        },
-                        [
-                          _vm._v(
-                            "\n                  Make Card\n                "
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "_btn _action_btn make_btn1",
-                          attrs: { type: "button" }
-                        },
-                        [_vm._v("\n                  Delete\n                ")]
-                      )
-                    ])
-                  ])
-                ])
-              ])
-            ]
-          )
+          _c("th", [_vm._v("Title")]),
+          _vm._v(" "),
+          _c("th", [_vm._v("Category")]),
+          _vm._v(" "),
+          _c("th", [_vm._v("Action")])
+        ]),
+        _vm._v(" "),
+        _c("tr", [
+          _c("td", [_vm._v("25-05-19")]),
+          _vm._v(" "),
+          _c("td", { staticClass: "_table_name" }, [
+            _vm._v(
+              '\n                                Manhattan\'s art center "Shed" opening\n                                ceremony\n                            '
+            )
+          ]),
+          _vm._v(" "),
+          _c("td", [_vm._v("Economy")]),
+          _vm._v(" "),
+          _c("td", [
+            _c(
+              "button",
+              {
+                staticClass: "_btn _action_btn view_btn1",
+                attrs: { type: "button" }
+              },
+              [
+                _vm._v(
+                  "\n                                    View\n                                "
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "_btn _action_btn edit_btn1",
+                attrs: { type: "button" }
+              },
+              [
+                _vm._v(
+                  "\n                                    Edit\n                                "
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "_btn _action_btn make_btn2",
+                attrs: { type: "button" }
+              },
+              [
+                _vm._v(
+                  "\n                                    Make Features\n                                "
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "_btn _action_btn make_btn3",
+                attrs: { type: "button" }
+              },
+              [
+                _vm._v(
+                  "\n                                    Make Card\n                                "
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "_btn _action_btn make_btn1",
+                attrs: { type: "button" }
+              },
+              [
+                _vm._v(
+                  "\n                                    Delete\n                                "
+                )
+              ]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("tr", [
+          _c("td", [_vm._v("25-05-19")]),
+          _vm._v(" "),
+          _c("td", { staticClass: "_table_name" }, [
+            _vm._v(
+              "\n                                Are Trump era is having an impact on what 's\n                                future voters\n                            "
+            )
+          ]),
+          _vm._v(" "),
+          _c("td", [_vm._v("Social")]),
+          _vm._v(" "),
+          _c("td", [
+            _c(
+              "button",
+              {
+                staticClass: "_btn _action_btn view_btn1",
+                attrs: { type: "button" }
+              },
+              [
+                _vm._v(
+                  "\n                                    View\n                                "
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "_btn _action_btn edit_btn1",
+                attrs: { type: "button" }
+              },
+              [
+                _vm._v(
+                  "\n                                    Edit\n                                "
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "_btn _action_btn make_btn2",
+                attrs: { type: "button" }
+              },
+              [
+                _vm._v(
+                  "\n                                    Make Features\n                                "
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "_btn _action_btn make_btn3",
+                attrs: { type: "button" }
+              },
+              [
+                _vm._v(
+                  "\n                                    Make Card\n                                "
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "_btn _action_btn make_btn1",
+                attrs: { type: "button" }
+              },
+              [
+                _vm._v(
+                  "\n                                    Delete\n                                "
+                )
+              ]
+            )
+          ])
         ])
       ])
     ])
@@ -40771,7 +41063,7 @@ var render = function() {
                   [
                     _c("v-img", {
                       staticStyle: { border: "thin solid #fff" },
-                      attrs: { src: "../img/coatofarm.jpg" }
+                      attrs: { src: "../images/nigerialogo.png" }
                     })
                   ],
                   1
