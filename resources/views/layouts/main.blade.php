@@ -344,7 +344,7 @@
 
                                     <li><a href="/about">About</a></li>
 
-                                    <li><a href="/events">Events & Activities</a></li>
+                                    <li><a href="/page/events">Events & Activities</a></li>
 
                                     <li><a href="/contactus">Contact</a></li>
 

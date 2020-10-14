@@ -1,24 +1,35 @@
-import Vue from 'vue';
-import Router from 'vue-router';
+import Vue from "vue";
+import Router from "vue-router";
 Vue.use(Router);
 
-import home from './pages/Home';
-import events from './pages/Events';
+import home from "./pages/Home";
+import events from "./pages/Events";
+import documents from "./pages/Documents";
+import users from "./pages/Users";
 
 const routes = [{
-        path: '/home',
+        path: "/home",
         component: home,
-        name: 'home'
+        name: "home"
     },
     {
-        path: '/events',
+        path: "/events",
         component: events,
-        name: 'events'
+        name: "events"
+    },
+    {
+        path: "/documents",
+        component: documents,
+        name: "documents"
+    },
+    {
+        path: "/users",
+        component: users,
+        name: "users"
     }
-
-]
+];
 
 export default new Router({
-    mode: 'history',
+    mode: "history",
     routes
-})
+});
