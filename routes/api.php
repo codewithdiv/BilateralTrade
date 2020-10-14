@@ -17,7 +17,12 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+// Events
 Route::apiResources(['events' => 'API\AdminController']);
+Route::post('update_event', 'API\AdminController@updateEvent');
+Route::post('delete_event', 'API\AdminController@deleteEvent');
+
+// Users
 Route::get('get_users', 'API\AdminController@getUsers');
 Route::post('create_users', 'API\AdminController@createUser');
 Route::post('edit_user', 'API\AdminController@editUser');

@@ -919,11 +919,11 @@ li.activeclass {
 
 ._table tr:first-child {
     /* background: #a7ccff; */
-    background: #414242;
+    background: #1B5E20;
 }
 
 ._table tr:first-child:hover {
-    background: #414242;
+    background: #1B5E20;
 }
 
 ._table tr:hover, ._table tr:nth-child(even):hover {

@@ -181,24 +181,43 @@
                                         Close
                                     </v-btn>
                                     <v-btn
-                                        color="green darken-4"
-                                        dark
-                                        @click="
-                                            editmode ? updateUser() : addUser()
+                                        color="success darken-4"
+                                        @click.prevent="
+                                            editmode ? updateUser() : addUser();
+                                            loader = 'isAdding';
                                         "
+                                        :loading="isAdding"
+                                        :disabled="isAdding"
                                         v-show="!editmode"
                                     >
                                         Add User
+                                        <template v-slot:loader>
+                                            <span class="custom-loader">
+                                                <v-icon light
+                                                    >mdi-cached</v-icon
+                                                >
+                                            </span>
+                                        </template>
                                     </v-btn>
+
                                     <v-btn
-                                        color="green darken-4"
-                                        dark
-                                        @click="
-                                            editmode ? updateUser() : addUser()
+                                        color="success darken-4"
+                                        @click.prevent="
+                                            editmode ? updateUser() : addUser();
+                                            loader = 'isAdding';
                                         "
+                                        :loading="isAdding"
+                                        :disabled="isAdding"
                                         v-show="editmode"
                                     >
                                         Edit User
+                                        <template v-slot:loader>
+                                            <span class="custom-loader">
+                                                <v-icon light
+                                                    >mdi-cached</v-icon
+                                                >
+                                            </span>
+                                        </template>
                                     </v-btn>
                                 </v-card-actions>
                             </v-card>
@@ -225,7 +244,7 @@
                                     {{ user.name }}
                                 </td>
                                 <td>{{ user.lastName | upText }}</td>
-                                <td>{{ user.email }}</td>
+                                <td>{{ user.email | upText }}</td>
                                 <td>{{ user.created_at | myDate }}</td>
                                 <td>
                                     <v-btn
@@ -255,10 +274,22 @@
 
 <script>
 export default {
+    watch: {
+        loader() {
+            const l = this.loader;
+            this[l] = !this[l];
+
+            setTimeout(() => (this[l] = false), 4000);
+
+            this.loader = null;
+        }
+    },
     data: () => ({
         dialog: false,
         editmode: false,
-        menu: false,
+        isAdding: false,
+        isDeleting: false,
+        loader: null,
         modal: false,
         data: {
             name: "",
@@ -312,10 +343,11 @@ export default {
                 if ((res.status = 422)) {
                     console.log(res.data.errors);
                     for (let i in res.data.errors) {
-                        Toast.fire({
-                            icon: "info",
-                            title: res.data.errors[i][0]
-                        });
+                        // Toast.fire({
+                        //     icon: "info",
+                        //     title: res.data.errors[i][0]
+                        // });
+                        this.e(res.data.errors[i][0]);
                     }
                 } else {
                     Toast.fire({
@@ -348,11 +380,11 @@ export default {
                 if (res.status == 422) {
                     console.log(res.data.errors);
                     for (let i in res.data.errors) {
-                        Toast.fire({
-                            icon: "error",
-                            title: res.data.errors[i][0]
-                        });
-                        // this.e(res.data.errors[i][0])
+                        // Toast.fire({
+                        //     icon: "error",
+                        //     title: res.data.errors[i][0]
+                        // });
+                        this.e(res.data.errors[i][0]);
                     }
                 } else {
                     Toast.fire({
@@ -402,3 +434,41 @@ export default {
     }
 };
 </script>
+<style>
+.custom-loader {
+    animation: loader 1s infinite;
+    display: flex;
+}
+@-moz-keyframes loader {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes loader {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@-o-keyframes loader {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes loader {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+</style>

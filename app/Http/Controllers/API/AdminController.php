@@ -17,7 +17,7 @@ class AdminController extends Controller
      */
     public function index()
     {
-        //
+        return Event::orderBy('id', 'desc')->get();
     }
 
     /**
@@ -29,15 +29,7 @@ class AdminController extends Controller
     public function store(Request $request)
     {
         // $user = Auth::user();
-        // $this->validate($request, [
-        //     'eventName' => 'required',
-        //     'venue' => 'required',
-        //     'eventType' => 'required',
-        //     'date' => 'required',
-        //     'description' => 'required'
-        // ]);
-
-        $data = request()->validate([
+        $this->validate($request, [
             'eventName' => 'required',
             'venue' => 'required',
             'eventType' => 'required',
@@ -45,19 +37,45 @@ class AdminController extends Controller
             'description' => 'required'
         ]);
 
-        // $data['user_id'] = auth()->user()->id;
-        // $event = Event::create($data);
+        $event = Event::create([
+            'eventName' => $request['eventName'],
+            'venue' => $request['venue'],
+            'date' => $request['date'],
+            'eventType' => $request['eventType'],
+            'description' => $request['description'],
+            // 'user_id' => $user->id
+        ]);
 
-            $event = auth()->user()->event()->create($data);
-
-            // 'eventName' => $request['eventName'],
-            // 'venue' => $request['venue'],
-            // 'date' => $request['date'],
-            // 'eventType' => $request['eventType'],
-            // 'description' => $request['description'],
-            // // 'user_id' => $user->id
 
         return $event;
+    }
+
+    public function updateEvent(Request $request){
+        $this->validate($request, [
+            'eventName' => 'required',
+            'venue' => 'required',
+            'eventType' => 'required',
+            'date' => 'required',
+            'description' => 'required'
+        ]);
+
+        $data = [
+            'eventName' => $request['eventName'],
+            'venue' => $request['venue'],
+            'eventType' => $request['eventType'],
+            'date' => $request['date'],
+            'description' => $request['description']
+        ];
+
+        $event = Event::where('id', $request->id)->update($data);
+        return $event;
+    }
+    public function deleteEvent(Request $request) {
+        $this->validate($request, [
+            'id' => 'required',
+        ]);
+        return Event::where('id', $request->id)->delete();
+        return ['message' => 'Event deleted Successfully'];
     }
 
     // User section
