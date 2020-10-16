@@ -24,7 +24,8 @@
 
     <link rel="icon" href="/images/nigerialogo.png" type="image/x-icon">
 
-
+    {{-- Font --}}
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap" rel="stylesheet">
 
     <!-- Responsive Settings -->
 
@@ -158,13 +159,13 @@
 
                                         </li>-->
 
-                                        <li class=""><a href="/events">Events & Activities</a>
+                                        <li class=""><a href="/ourevent">Events & Activities</a>
 
 
 
                                         </li>
 
-                                        <li class=""><a href="/downloads">PDF Downloads</a>
+                                        <li class=""><a href="/downloads">MOU's $ Agreements</a>
 
 
 
@@ -366,7 +367,7 @@
 
                             <div class="widget-title">
 
-                                <h4>Downloads</h4>
+                                <h4>Documents</h4>
 
                             </div>
 
@@ -374,7 +375,7 @@
 
                                 <ul class="num-links">
 
-                                    <li><a href="/downloads">PDFs</a></li>
+                                    <li><a href="/downloads">MOU's $ Agreements</a></li>
 
 
 

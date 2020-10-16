@@ -114,7 +114,8 @@
 
                 <div class="slide-item">
 
-                    <div class="image-layer" style="background-image: url(images/main-slider/1.jpg);"></div>
+                    <div class="image-layer" style="background-image: url(images/background/IMG_2977.jpg);"></div>
+                    {{-- <div class="image-layer" style="background-image: url(images/background/IMG_2977.jpg);"></div> --}}
 
                     <div class="auto-container">
 
@@ -124,13 +125,13 @@
 
                                 <div class="inner">
 
-                                    <h1>London is <br>Best Town on <br>Earth</h1>
+                                    <h1>Check Out The<br> Departments Upcoming <br>Events</h1>
 
-                                    <div class="text">We're starting off with a handful of spots that should also be on your bucket list.</div>
+                                    <div class="text">The department have series of events that are being oraginsed in different places and different countries</div>
 
                                     <div class="links-box clearfix">
 
-                                        <a href="about.html" class="theme-btn btn-style-one"><span class="btn-title">Learn More</span></a>
+                                        <a href="/ourevent" class="theme-btn btn-style-one"><span class="btn-title">See All Events</span></a>
 
 
                                     </div>
@@ -153,7 +154,7 @@
 
                 <div class="slide-item">
 
-                    <div class="image-layer" style="background-image: url(images/main-slider/2.jpg);"></div>
+                    <div class="image-layer" style="background-image: url(images/main-slider/6.jpg);"></div>
 
                     <div class="auto-container">
 
@@ -163,13 +164,13 @@
 
                                 <div class="inner">
 
-                                    <h1>Save Time, <br>pay your tax <br>online </h1>
+                                    <h1>See all signed <br>MoU's and Agreements</h1>
 
-                                    <div class="text">We're starting off with a handful of spots that should also be on your bucket list.</div>
+                                    <div class="text">The Department houses all MoU's and Agreements signed by the Nigerian Goverment</div>
 
                                     <div class="links-box clearfix">
 
-                                        <a href="about.html" class="theme-btn btn-style-one"><span class="btn-title">Pay Your Tax</span></a>
+                                        <a href="/downloads" class="theme-btn btn-style-one"><span class="btn-title">View Documents</span></a>
 
 
                                     </div>
@@ -190,7 +191,7 @@
 
                 <!-- Slide Item -->
 
-                <div class="slide-item">
+                {{-- <div class="slide-item">
 
                     <div class="image-layer" style="background-image: url(images/main-slider/3.jpg);"></div>
 
@@ -224,7 +225,7 @@
 
 
 
-                </div>
+                </div> --}}
 
 
 
@@ -234,221 +235,7 @@
 
         <!--End Banner Section -->
 
-
-
-        <!--Services Section-->
-
-        <section class="services-section-three">
-
-
-
-            <div class="auto-container">
-
-                <div class="sec-title with-separator centered">
-
-                    <h2>About Us</h2>
-
-
-                    <div class="lower-text" style="margin-top:-30px">Denounce with righteous indignation and dislike men who are so beguiled & demoralized our power of choice.</div>
-
-                </div>
-
-
-
-                <div class="row clearfix">
-
-                    <!--Featured Block Six-->
-
-                    <div class="featured-block-six col-lg-4 col-md-6 col-sm-12">
-
-                        <div class="inner-box">
-
-                            <div class="content-box">
-
-                                <div class="image-layer" style="background-image: url(images/resource/featured-image-16.jpg);"></div>
-
-                                <div class="content">
-
-                                    <div class="icon-box"><span class="flaticon-city-hall"></span></div>
-
-                                    <div class="subtitle">Service</div>
-
-                                    <h4><a href="#">For Residents</a></h4>
-
-                                </div>
-
-                                <div class="text">Foresee the pain and trouble that are bound to ensue;and equal.</div>
-
-                            </div>
-
-                            <div class="hvr-dropdown">
-
-                                <ul>
-
-                                    <li><a href="#">Healthcare</a></li>
-
-                                    <li><a href="#">Animal & Pet Services</a></li>
-
-                                    <li><a href="#">Education</a></li>
-
-                                    <li><a href="#">Public Utilities</a></li>
-
-                                </ul>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <!--Featured Block Six-->
-
-                    <div class="featured-block-six col-lg-4 col-md-6 col-sm-12">
-
-                        <div class="inner-box">
-
-                            <div class="content-box">
-
-                                <div class="image-layer" style="background-image: url(images/resource/featured-image-16.jpg);"></div>
-
-                                <div class="content">
-
-                                    <div class="icon-box"><span class="flaticon-man"></span></div>
-
-                                    <div class="subtitle">Service</div>
-
-                                    <h4><a href="#">For Visitors</a></h4>
-
-                                </div>
-
-                                <div class="text">These cases are perfectly simple works easy work to distinguish.</div>
-
-                            </div>
-
-                            <div class="hvr-dropdown">
-
-                                <ul>
-
-                                    <li><a href="#">Healthcare</a></li>
-
-                                    <li><a href="#">Animal & Pet Services</a></li>
-
-                                    <li><a href="#">Education</a></li>
-
-                                    <li><a href="#">Public Utilities</a></li>
-
-                                </ul>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <!--Featured Block Six-->
-
-                    <div class="featured-block-six col-lg-4 col-md-6 col-sm-12">
-
-                        <div class="inner-box">
-
-                            <div class="content-box">
-
-                                <div class="image-layer" style="background-image: url(images/resource/featured-image-16.jpg);"></div>
-
-                                <div class="content">
-
-                                    <div class="icon-box"><span class="flaticon-suitcase"></span></div>
-
-                                    <div class="subtitle">Service</div>
-
-                                    <h4><a href="#">For Business</a></h4>
-
-                                </div>
-
-                                <div class="text">These cases are perfectly simple works easy work to distinguish.</div>
-
-                            </div>
-
-                            <div class="hvr-dropdown">
-
-                                <ul>
-
-                                    <li><a href="#">Healthcare</a></li>
-
-                                    <li><a href="#">Animal & Pet Services</a></li>
-
-                                    <li><a href="#">Education</a></li>
-
-                                    <li><a href="#">Public Utilities</a></li>
-
-                                </ul>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-
-        <!--About Section-->
-
-        <section class="about-section">
-
-            <div class="image-layer" style="background-image: url(images/background/IMG_2977.jpg);"></div>
-
-            {{-- <div class="pattern-layer" style="background-image: url(images/background/pattern-1.png);"></div> --}}
-
-            <div class="auto-container">
-
-                <div class="content-box">
-
-                    <div class="content">
-
-                        <div class="sec-title light">
-
-                            <h2>From the Deputy Director (Bilaterial)'s Desk</h2>
-
-                        </div>
-
-                        <div class="upper-text clearfix">mayor of london the obligations business will frequently occur that all pleasures have to be repudiated annoyances accepted wise man therefore always holds.</div>
-
-                        <div class="text">Beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee.</div>
-
-
-
-                        <div class="info">
-
-                            <div class="name" style="font-size:larger">Racheal M. George</div>
-
-                            <div class="designation">Assistance Director (Bilaterial)</div>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <!--Quote-->
-
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!--Services Section-->
+<!--Services Section-->
 
         <section class="services-section">
 
@@ -457,7 +244,7 @@
                 <h2>Department Services</h2>
 
 
-                <div class="lower-text" style="margin-top: -30px;">Denounce with righteous indignation and dislike men who are so beguiled & demoralized our power of choice.</div>
+                <div class="lower-text" style="margin-top: -30px;">Bilateral Department render's 4 major services to the general public and these are</div>
 
             </div>
 
@@ -491,7 +278,7 @@
 
                                             <div class="content">
 
-                                                <h4><a href="policing-crime.html">Policing & <br>crime department</a></h4>
+                                                <h4><a href="policing-crime.html">Hosting of Trade fairs</a></h4>
 
                                                 <div class="text">Blinded by desire, that they cannot foresee belongs which through shrinking.</div>
 
@@ -519,7 +306,7 @@
 
                                             <div class="content">
 
-                                                <h4><a href="transport-traffice.html">Transport & <br>traffic department</a></h4>
+                                                <h4><a href="transport-traffice.html">Exhibition Approval</a></h4>
 
                                                 <div class="text">Foresee the pain and trouble that are bound to ensue; and equal blame belongs.</div>
 
@@ -610,6 +397,54 @@
 
 
 
+        <!--About Section-->
+
+        <section class="about-section">
+
+            <div class="image-layer" style="background-image: url(images/background/IMG_2977.jpg);"></div>
+
+            {{-- <div class="pattern-layer" style="background-image: url(images/background/pattern-1.png);"></div> --}}
+
+            <div class="auto-container">
+
+                <div class="content-box">
+
+                    <div class="content">
+
+                        <div class="sec-title light">
+
+                            <h2>From the Deputy Director (Bilaterial)'s Desk</h2>
+
+                        </div>
+
+                        <div class="upper-text clearfix">mayor of london the obligations business will frequently occur that all pleasures have to be repudiated annoyances accepted wise man therefore always holds.</div>
+
+                        <div class="text">Beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee.</div>
+
+
+
+                        <div class="info">
+
+                            <div class="name" style="font-size:larger">Ishaku Zachariah</div>
+
+                            <div class="designation">Deputy Director (Bilaterial)</div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!--Quote-->
+
+
+
+                </div>
+
+            </div>
+
+        </section>
+
 
         <!--Events Section-->
 
@@ -699,7 +534,7 @@
 
                                     <div class="see-all">
 
-                                        <a href="events-list.html"><span class="arrow flaticon-right-2"></span> View All Upcoming Events</a>
+                                        <a href="/ourevent"><span class="arrow flaticon-right-2"></span> View All Upcoming Events</a>
 
                                     </div>
 
@@ -795,7 +630,7 @@
                     <h2>Suggestion and Complaints</h2>
 
 
-                    <div class="lower-text" style="margin-top:-30px">Denounce with righteous indignation and dislike men who are so beguiled & demoralized our power of choice.</div>
+                    <div class="lower-text" style="margin-top:-30px">We are open to all forms of Suggestions and complaint from the general public</div>
 
                 </div>
 

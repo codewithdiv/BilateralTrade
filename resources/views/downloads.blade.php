@@ -5,7 +5,7 @@
 
         <section class="page-banner">
 
-
+            <div class="image-layer" style="background-image: url(images/main-slider/7.jpg);"></div>
 
             <div class="banner-inner">
 
@@ -13,7 +13,7 @@
 
                     <div class="inner-container clearfix">
 
-                        <h1>Downloads</h1>
+                        <h1>MOU's $ Agreements</h1>
 
 
 
