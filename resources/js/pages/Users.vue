@@ -243,8 +243,8 @@
                                 <td class="_table_name">
                                     {{ user.name }}
                                 </td>
-                                <td>{{ user.lastName | upText }}</td>
-                                <td>{{ user.email | upText }}</td>
+                                <td class="uppercase">{{ user.lastName }}</td>
+                                <td >{{ user.email | upText }}</td>
                                 <td>{{ user.created_at | myDate }}</td>
                                 <td>
                                     <v-btn

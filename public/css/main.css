@@ -3435,3 +3435,6 @@ i.cross_icon {
     width: 70px;
     height: 50px;
 }
+.uppercase{
+    text-transform: capitalize;
+}

@@ -27,3 +27,11 @@ Route::get('get_users', 'API\AdminController@getUsers');
 Route::post('create_users', 'API\AdminController@createUser');
 Route::post('edit_user', 'API\AdminController@editUser');
 Route::post('delete_user', 'API\AdminController@deleteUser');
+
+// Document
+Route::get('get_document', 'API\AdminController@getDocument');
+Route::post('upload_document', 'API\AdminController@uploadDocument');
+Route::post('delete_file', 'API\AdminController@deleteFile');
+Route::post('create_document', 'API\AdminController@createDocument');
+Route::post('edit_document', 'API\AdminController@editDocument');
+Route::post('delete_document', 'API\AdminController@deleteDocument');

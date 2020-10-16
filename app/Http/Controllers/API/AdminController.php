@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Event;
 use App\User;
+use App\Document;
 use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
@@ -129,4 +130,98 @@ class AdminController extends Controller
         return User::where('id', $request->id)->delete();
         return ['message' => 'User deleted Successfully'];
     }
+
+    // Document Section
+
+    public function getDocument() {
+        return Document::orderBy('id', 'desc')->get();
+    }
+
+    public function createDocument(Request $request){
+        $this->validate($request, [
+            'name' => 'required',
+            'country' => 'required',
+            'subject' => 'required',
+            'status' => 'required',
+            'years' => 'required',
+            'remarks' => 'required',
+            'documentType' => 'required',
+            'document' => 'required',
+        ]);
+        $data = [
+            'name' => $request['name'],
+            'documentType' => $request['documentType'],
+            'document' => $request['document'],
+            'country' => $request['country'],
+            'subject' => $request['subject'],
+            'status' => $request['status'],
+            'remarks' => $request['remarks'],
+            'years' => $request['years'],
+        ];
+
+        $document = Document::create($data);
+        return $document;
+    }
+
+    public function editDocument(Request $request){
+        $this->validate($request, [
+            'name' => 'required',
+            'country' => 'required',
+            'subject' => 'required',
+            'status' => 'required',
+            'years' => 'required',
+            'remarks' => 'required',
+            'documentType' => 'required',
+            'document' => 'required',
+        ]);
+        $data = [
+            'name' => $request['name'],
+            'documentType' => $request['documentType'],
+            'document' => $request['document'],
+            'country' => $request['country'],
+            'subject' => $request['subject'],
+            'status' => $request['status'],
+            'remarks' => $request['remarks'],
+            'years' => $request['years'],
+        ];
+        $document = Document::where('id', $request->id)->update($data);
+        return $document;
+    }
+
+    public function uploadDocument(Request $request) {
+        $this->validate($request, [
+            'file' => 'required|mimes:jpeg,png,bimp,pdf',
+        ]);
+        $documentName = time().'.'.$request->file->extension();
+        $request->file->move(public_path('uploads'), $documentName);
+        return $documentName;
+    }
+
+    public function deleteDocument(Request $request){
+         $this->validate($request, [
+            'id' => 'required',
+        ]);
+        $fileName = $request->imageName;
+        $filePath = public_path().'/uploads/'.$fileName;
+        if (file_exists($filePath)) {
+            @unlink($filePath);
+        }
+        return Document::where('id', $request->id)->delete();
+        return ['message' => 'User deleted Successfully'];
+    }
+
+    public function deleteFile(Request $request){
+        $fileName = $request->imageName;
+        $this->deleteFileFromServer($fileName);
+        return 'done';
+    }
+
+    public function deleteFileFromServer($fileName){
+        $filePath = public_path().'/uploads/'.$fileName;
+        if (file_exists($filePath)) {
+            @unlink($filePath);
+        }
+        return;
+    }
+
 }

@@ -402,9 +402,9 @@
 
         <section class="about-section">
 
-            <div class="image-layer" style="background-image: url(images/background/image-1.jpg);"></div>
+            <div class="image-layer" style="background-image: url(images/background/IMG_2977.jpg);"></div>
 
-            <div class="pattern-layer" style="background-image: url(images/background/pattern-1.png);"></div>
+            {{-- <div class="pattern-layer" style="background-image: url(images/background/pattern-1.png);"></div> --}}
 
             <div class="auto-container">
 
@@ -414,7 +414,7 @@
 
                         <div class="sec-title light">
 
-                            <h2>From the Assistance Director (Bilaterial)'s Desk</h2>
+                            <h2>From the Deputy Director (Bilaterial)'s Desk</h2>
 
                         </div>
 

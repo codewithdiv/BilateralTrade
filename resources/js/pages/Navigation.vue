@@ -103,7 +103,7 @@ export default {
             {
                 title: "Events",
                 icon: "mdi-calendar-multiple",
-                route: "/events"
+                route: "/tradeevents"
             },
             {
                 title: "Documents",
