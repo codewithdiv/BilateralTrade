@@ -397,55 +397,6 @@
 
 
 
-        <!--About Section-->
-
-        <section class="about-section">
-
-            <div class="image-layer" style="background-image: url(images/background/IMG_2977.jpg);"></div>
-
-            {{-- <div class="pattern-layer" style="background-image: url(images/background/pattern-1.png);"></div> --}}
-
-            <div class="auto-container">
-
-                <div class="content-box">
-
-                    <div class="content">
-
-                        <div class="sec-title light">
-
-                            <h2>From the Deputy Director (Bilaterial)'s Desk</h2>
-
-                        </div>
-
-                        <div class="upper-text clearfix">mayor of london the obligations business will frequently occur that all pleasures have to be repudiated annoyances accepted wise man therefore always holds.</div>
-
-                        <div class="text">Beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee.</div>
-
-
-
-                        <div class="info">
-
-                            <div class="name" style="font-size:larger">Ishaku Zachariah</div>
-
-                            <div class="designation">Deputy Director (Bilaterial)</div>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <!--Quote-->
-
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
         <!--Events Section-->
 
         <section class="events-section">
@@ -608,13 +559,53 @@
         </section>
 
 
+        <!--About Section-->
+
+        <section class="about-section">
+
+            <div class="image-layer" style="background-image: url(images/background/IMG_2977.jpg);"></div>
+
+            {{-- <div class="pattern-layer" style="background-image: url(images/background/pattern-1.png);"></div> --}}
+
+            <div class="auto-container">
+
+                <div class="content-box">
+
+                    <div class="content">
+
+                        <div class="sec-title light">
+
+                            <h2>From the Deputy Director (Bilaterial)'s Desk</h2>
+
+                        </div>
+
+                        <div class="upper-text clearfix">mayor of london the obligations business will frequently occur that all pleasures have to be repudiated annoyances accepted wise man therefore always holds.</div>
+
+                        <div class="text">Beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee.</div>
 
 
 
+                        <div class="info">
+
+                            <div class="name" style="font-size:larger">Ishaku Zachariah</div>
+
+                            <div class="designation">Deputy Director (Bilaterial)</div>
+
+                        </div>
+
+                    </div>
 
 
 
+                    <!--Quote-->
 
+
+
+                </div>
+
+            </div>
+
+        </section>
 
 
         <!--Contact Info Section-->
@@ -646,7 +637,7 @@
 
                             <strong>Call on</strong>
 
-                            <div class="info"><a href="tel:+4488812345">+44 888 12 345</a></div>
+                            <div class="info"><a href="tel:+23408010000000">08010000000</a></div>
 
                         </div>
 

@@ -1,315 +1,112 @@
 <template>
-    <div>
-        <div class="content">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 col-md-3">
-                        <div
-                            class="_1adminOverveiw_card _box_shadow _border_radious _mar_b30 _1adminOverveiw_bg_one"
-                        >
-                            <div class="_1adminOverveiw_card_left">
-                                <p class="_1adminOverveiw_card_left_num">3</p>
+    <v-row>
+        <v-col class="" cols="12" sm="12" md="12">
+            <h1 class="events">Departments Upcoming Events</h1>
+            <div class="event-card">
+                <v-card class="ma-5" v-for="(event, i) in events" :key="i">
+                <v-img src="../images/main-slider/8.jpg" height="200px" class="white--text align-end">
+                    <v-card-title>{{ event.eventName }}</v-card-title>
+                </v-img>
 
-                                <p class="_1adminOverveiw_card_left_title">
-                                    Today's News
-                                </p>
-                            </div>
-                            <div class="_1adminOverveiw_card_right">
-                                <v-icon color="blue">mdi-file-multiple</v-icon>
-                            </div>
-                        </div>
+                <v-card-title>
+                    Venue: {{ event.venue }}
+                </v-card-title>
+
+                <v-card-text class="text--primary">
+                    <div><span class="event-type">Date:</span> <span class="type mr-5">{{ event.date | myDate }}</span></div> <br>
+
+                    <div><span class="event-type">Type of Event:</span> <span class="type mr-5">{{ event.eventType }}</span></div>
+                </v-card-text>
+
+                <v-card-actions>
+                    <h4 color="orange">
+                        Events Description
+                    </h4>
+
+                    <v-spacer></v-spacer>
+
+                    <v-btn @click="show = !show" text>
+                        About Event
+                        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                    </v-btn>
+                </v-card-actions>
+
+                <v-expand-transition>
+                    <div v-show="show">
+                        <v-divider></v-divider>
+
+                        <v-card-text>
+                            {{ event.description }}
+                        </v-card-text>
                     </div>
-
-                    <div class="col-12 col-md-3">
-                        <div
-                            class="_1adminOverveiw_card _box_shadow _border_radious _mar_b30 _1adminOverveiw_bg_two"
-                        >
-                            <div class="_1adminOverveiw_card_left">
-                                <p class="_1adminOverveiw_card_left_num">29</p>
-
-                                <p class="_1adminOverveiw_card_left_title">
-                                    Total News
-                                </p>
-                            </div>
-                            <div class="_1adminOverveiw_card_right">
-                                <v-icon color="blue">mdi-file-multiple</v-icon>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-3">
-                        <div
-                            class="_1adminOverveiw_card _box_shadow _border_radious _mar_b30 _1adminOverveiw_bg_two"
-                        >
-                            <div class="_1adminOverveiw_card_left">
-                                <p class="_1adminOverveiw_card_left_num">29</p>
-
-                                <p class="_1adminOverveiw_card_left_title">
-                                    Features News
-                                </p>
-                            </div>
-                            <div class="_1adminOverveiw_card_right">
-                                <v-icon color="blue">mdi-file-multiple</v-icon>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-3">
-                        <div
-                            class="_1adminOverveiw_card _box_shadow _border_radious _mar_b30 _1adminOverveiw_bg_two"
-                        >
-                            <div class="_1adminOverveiw_card_left">
-                                <p class="_1adminOverveiw_card_left_num">29</p>
-
-                                <p class="_1adminOverveiw_card_left_title">
-                                    Card News
-                                </p>
-                            </div>
-                            <div class="_1adminOverveiw_card_right">
-                                <v-icon color="blue">mdi-file-multiple</v-icon>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--~~~~~~~ TABLE ONE ~~~~~~~~~-->
-                <div
-                    class="_1adminOverveiw_table_recent _box_shadow _border_radious _mar_b30 _p20"
-                >
-                    <p class="_title0">Recent News</p>
-
-                    <div class="_overflow _table_div">
-                        <table class="_table">
-                            <!-- TABLE TITLE -->
-                            <tr>
-                                <th>Date</th>
-                                <th>Title</th>
-                                <th>Category</th>
-                                <th>Action</th>
-                            </tr>
-                            <!-- TABLE TITLE -->
-
-                            <!-- ITEMS -->
-                            <tr>
-                                <td>25-05-19</td>
-                                <td class="_table_name">
-                                    Manhattan's art center "Shed" opening
-                                    ceremony
-                                </td>
-                                <td>Economy</td>
-                                <td>
-                                    <button
-                                        class="_btn _action_btn view_btn1"
-                                        type="button"
-                                    >
-                                        View
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn edit_btn1"
-                                        type="button"
-                                    >
-                                        Edit
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn make_btn2"
-                                        type="button"
-                                    >
-                                        Make Features
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn make_btn3"
-                                        type="button"
-                                    >
-                                        Make Card
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn make_btn1"
-                                        type="button"
-                                    >
-                                        Delete
-                                    </button>
-                                </td>
-                            </tr>
-                            <!-- ITEMS -->
-
-                            <!-- ITEMS -->
-                            <tr>
-                                <td>25-05-19</td>
-                                <td class="_table_name">
-                                    Are Trump era is having an impact on what 's
-                                    future voters
-                                </td>
-                                <td>Social</td>
-                                <td>
-                                    <button
-                                        class="_btn _action_btn view_btn1"
-                                        type="button"
-                                    >
-                                        View
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn edit_btn1"
-                                        type="button"
-                                    >
-                                        Edit
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn make_btn2"
-                                        type="button"
-                                    >
-                                        Make Features
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn make_btn3"
-                                        type="button"
-                                    >
-                                        Make Card
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn make_btn1"
-                                        type="button"
-                                    >
-                                        Delete
-                                    </button>
-                                </td>
-                            </tr>
-                            <!-- ITEMS -->
-
-                            <!-- ITEMS -->
-                            <tr>
-                                <td>25-05-19</td>
-                                <td class="_table_name">
-                                    Manhattan's art center "Shed" opening
-                                    ceremony
-                                </td>
-                                <td>Economy</td>
-                                <td>
-                                    <button
-                                        class="_btn _action_btn view_btn1"
-                                        type="button"
-                                    >
-                                        View
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn edit_btn1"
-                                        type="button"
-                                    >
-                                        Edit
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn make_btn2"
-                                        type="button"
-                                    >
-                                        Make Features
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn make_btn3"
-                                        type="button"
-                                    >
-                                        Make Card
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn make_btn1"
-                                        type="button"
-                                    >
-                                        Delete
-                                    </button>
-                                </td>
-                            </tr>
-                            <!-- ITEMS -->
-
-                            <!-- ITEMS -->
-                            <tr>
-                                <td>25-05-19</td>
-                                <td class="_table_name">
-                                    Are Trump era is having an impact on what 's
-                                    future voters
-                                </td>
-                                <td>Social</td>
-                                <td>
-                                    <button
-                                        class="_btn _action_btn view_btn1"
-                                        type="button"
-                                    >
-                                        View
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn edit_btn1"
-                                        type="button"
-                                    >
-                                        Edit
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn make_btn2"
-                                        type="button"
-                                    >
-                                        Make Features
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn make_btn3"
-                                        type="button"
-                                    >
-                                        Make Card
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn make_btn1"
-                                        type="button"
-                                    >
-                                        Delete
-                                    </button>
-                                </td>
-                            </tr>
-                            <!-- ITEMS -->
-
-                            <!-- ITEMS -->
-                            <tr>
-                                <td>25-05-19</td>
-                                <td class="_table_name">
-                                    Are Trump era is having an impact on what 's
-                                    future voters
-                                </td>
-                                <td>Social</td>
-                                <td>
-                                    <button
-                                        class="_btn _action_btn view_btn1"
-                                        type="button"
-                                    >
-                                        View
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn edit_btn1"
-                                        type="button"
-                                    >
-                                        Edit
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn make_btn2"
-                                        type="button"
-                                    >
-                                        Make Features
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn make_btn3"
-                                        type="button"
-                                    >
-                                        Make Card
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn make_btn1"
-                                        type="button"
-                                    >
-                                        Delete
-                                    </button>
-                                </td>
-                            </tr>
-                            <!-- ITEMS -->
-                        </table>
-                    </div>
-                </div>
+                </v-expand-transition>
+            </v-card>
             </div>
-        </div>
-    </div>
+        </v-col>
+    </v-row>
 </template>
 
+
 <script>
-export default {};
+export default {
+    data: () => ({
+        show: false,
+        events: [],
+    }),
+    async created() {
+        const res = await this.callApi("get", "api/events", {
+            name: "eventName"
+        });
+        if (res.status == 200) {
+            this.events = res.data;
+        } else {
+            Toast.fire({
+                icon: "error",
+                title: "Something went wrong"
+            });
+        }
+    }
+}
 </script>
+
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap');
+.event-type {
+    /* font-weight: 600; */
+    font-size: 19px;
+}
+
+.type {
+    font-size: 17px;
+}
+
+h1.events {
+    /* margin-left: 2rem; */
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+
+@media (max-width: 768px) {
+    .event-card {
+        /* align-content: center; */
+        width: 100%;
+        margin-right: auto !important;
+        margin-left: auto !important;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (min-width: 768px) {
+    .event-card {
+        /* align-content: center; */
+        width: 80%;
+        margin-right: auto !important;
+        margin-left: auto !important;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+</style>

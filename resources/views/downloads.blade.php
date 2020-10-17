@@ -13,7 +13,7 @@
 
                     <div class="inner-container clearfix">
 
-                        <h1>MOU's $ Agreements</h1>
+                        <h1>MoU's $ Agreements</h1>
 
 
 
@@ -108,8 +108,6 @@
 
             </div>
 
+        </section>
 
-    </div>
-
-    </section>
 @endsection

@@ -57,23 +57,14 @@
                 </v-list-item>
             </v-list>
         </v-navigation-drawer>
-
-        <v-app-bar :clipped-left="primaryDrawer.clipped" app flat class="nav">
+        <v-app-bar :clipped-left="primaryDrawer.clipped" app class="nav">
             <v-toolbar flat>
                 <v-app-bar-nav-icon
                     v-if="primaryDrawer.type !== 'permanent'"
                     @click.stop="primaryDrawer.model = !primaryDrawer.model"
                 ></v-app-bar-nav-icon>
-                <v-toolbar-title>Bilateral Trade Department</v-toolbar-title>
+                <v-toolbar-title>Bilateral Trade</v-toolbar-title>
                 <v-spacer></v-spacer>
-                <!-- <v-col cols="3" sm="2">
-                    <v-text-field
-                        class="mt-5"
-                        label="Search"
-                        append-icon="mdi-magnify"
-                    ></v-text-field>
-        </v-col>-->
-
                 <v-btn icon>
                     <v-icon>mdi-bell</v-icon>
                 </v-btn>
