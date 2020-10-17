@@ -244,7 +244,7 @@
                 <h2>Department Services</h2>
 
 
-                <div class="lower-text" style="margin-top: -30px;">Bilateral Department render's 4 major services to the general public and these are</div>
+                <div class="lower-text" style="margin-top: -30px;">Bilateral Department render's 3 major services and these are</div>
 
             </div>
 
@@ -278,9 +278,9 @@
 
                                             <div class="content">
 
-                                                <h4><a href="policing-crime.html">Hosting of Trade fairs</a></h4>
+                                                <h4><a href="policing-crime.html">Initiation, negotiation, implementation and assessment of BTA's</a></h4>
 
-                                                <div class="text">Blinded by desire, that they cannot foresee belongs which through shrinking.</div>
+                                                <div class="text">Bilateral Trade Division is primarily responsible for the initiation, negotiation, implementation and assessment of Bilateral Trade Agreements (BTAs) and Memorandum of Understandings ( MoUs) between Nigeria and her prospective trading partners. </div>
 
 
 
@@ -306,9 +306,9 @@
 
                                             <div class="content">
 
-                                                <h4><a href="transport-traffice.html">Exhibition Approval</a></h4>
+                                                <h4><a href="transport-traffice.html">Participates in Bi—National Joint Commission Sessions and Trade Missions</a></h4>
 
-                                                <div class="text">Foresee the pain and trouble that are bound to ensue; and equal blame belongs.</div>
+                                                <div class="text">The Division also participates in Bi—National Joint Commission Sessions and Trade Missions organized by Bilateral Chambers and City Chambers of Commerce with a view to exploring business potentialities and improvement of our balance of trade position.</div>
 
 
 
@@ -334,9 +334,9 @@
 
                                             <div class="content">
 
-                                                <h4><a href="arts-culture.html">Arts & <br>culture department</a></h4>
+                                                <h4><a href="arts-culture.html">Organizes business forum</a></h4>
 
-                                                <div class="text">Trouble that are bound to ensue and equal to those city work who fail their duty.</div>
+                                                <div class="text">The Division does organize business forum for match making and interface between businessmen of the country and other countries</div>
 
 
 
@@ -352,7 +352,7 @@
 
                                 <!--Feature Block-->
 
-                                <div class="featured-block-two col-lg-6 col-md-6 col-sm-12">
+                                {{-- <div class="featured-block-two col-lg-6 col-md-6 col-sm-12">
 
                                     <div class="inner-box">
 
@@ -374,7 +374,7 @@
 
                                     </div>
 
-                                </div>
+                                </div> --}}
 
 
 
