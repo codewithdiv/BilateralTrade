@@ -67,7 +67,7 @@
 
                       <v-col cols="12" sm="12" md="6" v-show="!editmode">
                         <v-autocomplete
-                          :items="['PDF', 'Image']"
+                          :items="['MoU', 'Agreement']"
                           v-model="data.documentType"
                           label="Select Document Type"
                           outlined
@@ -188,7 +188,7 @@
 
                       <v-col cols="12" sm="12" md="6" v-show="editmode">
                         <v-autocomplete
-                          :items="['PDF', 'Image']"
+                          :items="['MoU', 'Agreements']"
                           v-model="editData.documentType"
                           label="Select Document Type"
                           outlined
@@ -471,7 +471,7 @@ export default {
     addDocumentDialog() {
       this.editmode = false;
       this.data.name = "";
-      this.data.document = '';
+      this.data.document = "";
       this.dialog = true;
     },
     editDocumentDialog(document, index) {
@@ -503,9 +503,10 @@ export default {
           title: "Document Created Successfully"
         });
         this.dialog = false;
-        this.data.name = "";
-        this.data.documentType = "";
-        this.data.document = "";
+        // this.data.name = "";
+        // this.data.documentType = "";
+        // this.data.document = "";
+        this.data = "";
       } else {
         if ((res.status = 422)) {
           console.log(res.data.errors);

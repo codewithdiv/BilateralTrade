@@ -26,6 +26,10 @@
 
     {{-- Font --}}
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet"
+
+    {{-- Bootstrap Css --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <!-- Responsive Settings -->
 
@@ -143,31 +147,11 @@
 
                                     <ul class="navigation clearfix ">
 
-                                        <li class="current"><a href="/" class="ml-1">Home</a>
+                                        <li class="current"><a href="/" class="ml-1">Home</a></li>
+                                        <li class=""><a href="/ourevent">Events & Activities</a></li>
 
-
-
-                                        </li>
-
+                                        <li class=""><a href="/downloads">MOU's & Agreements</a></li>
                                         <li class=""><a href="/about">About</a>
-
-                                        </li>
-
-                                        <!-- <li class=""><a href="departments.html">Departments Services</a>
-
-
-
-                                        </li>-->
-
-                                        <li class=""><a href="/ourevent">Events & Activities</a>
-
-
-
-                                        </li>
-
-                                        <li class=""><a href="/downloads">MOU's $ Agreements</a>
-
-
 
                                         </li>
 
@@ -375,7 +359,7 @@
 
                                 <ul class="num-links">
 
-                                    <li><a href="/downloads">MOU's $ Agreements</a></li>
+                                    <li><a href="/downloads">MOU's & Agreements</a></li>
 
 
 
@@ -449,7 +433,8 @@
 
 
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
         <script src="/js/jquery.js"></script>
 
         <script src="/js/popper.min.js"></script>

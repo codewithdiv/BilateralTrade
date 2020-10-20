@@ -35,3 +35,6 @@ Route::post('delete_file', 'API\AdminController@deleteFile');
 Route::post('create_document', 'API\AdminController@createDocument');
 Route::post('edit_document', 'API\AdminController@editDocument');
 Route::post('delete_document', 'API\AdminController@deleteDocument');
+
+// Logout
+Route::post('logout', 'API\Admincontroller@logout');

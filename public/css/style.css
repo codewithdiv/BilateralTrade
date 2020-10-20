@@ -14631,15 +14631,30 @@ img.lazy-image.loaded {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
+        font-family: 'Tajawal', sans-serif;
     }
 }
 
 .about-trade h4{
     line-height: 2rem;
-    font-family: 'Open Sans', sans-serif;
 }
 .about-trade .vission{
     text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+
+.event-type {
+    /* font-weight: 600; */
+    font-size: 19px;
+}
+
+.type {
+    font-size: 17px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap');
+.card-title{
+    font-size: 23px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
 }

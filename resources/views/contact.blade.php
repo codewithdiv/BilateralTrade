@@ -3,7 +3,7 @@
 @section('content')
     <section class="page-banner">
 
-            <<div class="image-layer" style="background-image:url(images/background/banner-image-2.jpg);"></div>
+           <div class="image-layer" style="background-image: url(images/main-slider/9.jpg);"></div>
 
 
 

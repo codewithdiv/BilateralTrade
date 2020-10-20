@@ -31,3 +31,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::any('{slug}', 'HomeController@index')->name('home');
+
+Route::get('/ourevent', 'FrontendController@event')->name('event');

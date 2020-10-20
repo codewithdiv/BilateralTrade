@@ -55,6 +55,14 @@
                         <v-list-item-title>{{ item.title }}</v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
+                <v-list-item @click.prevent="logout()">
+                    <v-list-item-icon>
+                        <v-icon>mdi-logout</v-icon>
+                    </v-list-item-icon>
+                    <v-list-item-content>
+                        <v-list-item-title>Logout</v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
             </v-list>
         </v-navigation-drawer>
         <v-app-bar :clipped-left="primaryDrawer.clipped" app class="nav">
@@ -111,7 +119,11 @@ export default {
             floating: false,
             mini: false
         },
-        methods: {},
+        methods: {
+            async logout() {
+                const res = await this.callApi('post', 'api/logout');
+            }
+        },
         footer: {
             inset: true
         }
