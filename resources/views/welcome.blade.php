@@ -249,17 +249,8 @@
             </div>
 
             <div class="auto-container">
-
-
-
                 <div class="row clearfix">
-
                     <!--Featured Service Block-->
-
-
-
-
-
                     <div class="">
 
                         <div class="col-inner">
@@ -281,9 +272,6 @@
                                                 <h4><a href="policing-crime.html">Initiation, negotiation, implementation and assessment of BTA's</a></h4>
 
                                                 <div class="text">Bilateral Trade Division is primarily responsible for the initiation, negotiation, implementation and assessment of Bilateral Trade Agreements (BTAs) and Memorandum of Understandings ( MoUs) between Nigeria and her prospective trading partners. </div>
-
-
-
                                             </div>
 
                                         </div>
@@ -429,60 +417,25 @@
 
                                     <div class="inner-box">
 
-                                        <div class="content-box">
+                                        @foreach ($events as $event)
+                                            <div class="content-box">
 
-                                            <div class="date-box">
-                                                <div class="date"><span class="day">14</span><span class="month">December</span></div>
+                                                <div class="date-box">
+                                                    <div class="date">{{ $event['date'] }}</div>
+                                                </div>
+
+                                                <div class="content">
+
+                                                    <div class="cat-info"><a href="#">{{ $event['eventType'] }}</a></div>
+
+                                                    <h3><a href="event-details.html">{{ $event['eventName'] }}</a></h3>
+
+                                                    <div class="location"><b>Venue:</b> {{ $event['venue'] }}</div>
+                                                </div>
                                             </div>
-
-                                            <div class="content">
-
-                                                <div class="cat-info"><a href="#">Training</a></div>
-
-                                                <h3><a href="event-details.html">Dacy's parade balloon inflation</a></h3>
-
-                                                <div class="location"><b>Venue:</b> At 12th street, Central park west, UK</div>
-
-
-
-                                            </div>
-
-                                        </div>
+                                        @endforeach
 
                                     </div>
-
-
-
-                                    <div class="inner-box">
-
-                                        <div class="content-box">
-
-                                            <div class="date-box">
-                                                <div class="date"><span class="day">14</span><span class="month">December</span></div>
-                                            </div>
-
-                                            <div class="content">
-
-                                                <div class="cat-info"><a href="#">Meeting</a></div>
-
-                                                <h3><a href="event-details.html">Dacy's parade balloon inflation</a></h3>
-
-                                                <div class="location"> <b>Venue:</b> At 12th street, Central park west, UK</div>
-
-
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-
-
-
-
-
-
                                     <div class="see-all">
 
                                         <a href="/ourevent"><span class="arrow flaticon-right-2"></span> View All Upcoming Events</a>

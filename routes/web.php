@@ -33,3 +33,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::any('{slug}', 'HomeController@index')->name('home');
 
 Route::get('/ourevent', 'FrontendController@event')->name('event');
+Route::get('/downloads', 'FrontendController@document')->name('document');
+Route::get('/', 'FrontendController@welcomeBladeEvent')->name('welcomeBladeEvent');

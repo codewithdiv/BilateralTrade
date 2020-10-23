@@ -12,4 +12,16 @@ class FrontendController extends Controller
         $events = Event::orderBy('id', 'desc')->get();
         return view('ourevent', compact('events'));
     }
+
+    public function document(){
+        $documents = Document::orderBy('id', 'desc')->get();
+        return view('downloads', compact('documents'));
+    }
+
+    public function welcomeBladeEvent() {
+        // $events = Event::orderby('id', 'desc')->get();
+        $events = Event::latest()->paginate(3);
+
+        return view('welcome', compact('events'));
+    }
 }
