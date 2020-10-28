@@ -23,7 +23,7 @@ Route::get('/contactus', function () {
 Route::get('/ourevent', function () {
     return view('ourevent');
 });
-Route::get('/downloads', function () {
+Route::get('/mous&agreements', function () {
     return view('downloads');
 });
 
@@ -33,5 +33,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::any('{slug}', 'HomeController@index')->name('home');
 
 Route::get('/ourevent', 'FrontendController@event')->name('event');
-Route::get('/downloads', 'FrontendController@document')->name('document');
+Route::get('/mous&agreements', 'FrontendController@document')->name('document');
 Route::get('/', 'FrontendController@welcomeBladeEvent')->name('welcomeBladeEvent');

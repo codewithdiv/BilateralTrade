@@ -121,8 +121,8 @@
                           }"
                           :on-success="handleSuccess"
                           :on-error="handleError"
-                          :format="['jpg', 'jpeg', 'png', 'pdf']"
-                          :max-size="2048"
+                          :format="['pdf']"
+                          :max-size="6144"
                           :on-format-error="handleFormatError"
                           :on-exceeded-size="handleMaxSize"
                           type="drag"
@@ -242,8 +242,8 @@
                           }"
                           :on-success="handleSuccess"
                           :on-error="handleError"
-                          :format="['jpg', 'jpeg', 'png', 'pdf']"
-                          :max-size="2048"
+                          :format="['pdf']"
+                          :max-size="6144"
                           :on-format-error="handleFormatError"
                           :on-exceeded-size="handleMaxSize"
                           type="drag"
@@ -455,7 +455,7 @@ export default {
         "The File format is incorrect.",
         "File format of " +
         file.name +
-        " is incorrect. Please select JPG, PNG or PDF file.",
+        " is incorrect. Please select PDF file.",
         "error"
       );
     },
@@ -464,7 +464,7 @@ export default {
         "Exceeding File Size Limit",
         "File format of " +
         file.name +
-        " is too large, no more than 3MB.",
+        " is too large, no more than 6MB.",
         "error"
       );
     },

@@ -65,9 +65,12 @@
                                                                         <td class="column3">{{ $document['documentType'] }}</td>
                                                                         <td class="column4">{{ $document['status'] }}</td>
                                                                         <td class="column5">
-                                                                            <a href=""><span class="download">Download</span></a>
+                                                                            <a href="{{ $document->document }}" target="_blank">
+                                                                                <span class="download">     Download
+                                                                                </span>
+                                                                            </a>
                                                                         </td>
-                                                                        
+
                                                                         {{-- <td class="column6">$999.00</td> --}}
                                                                     </tr>
                                                                 @endforeach

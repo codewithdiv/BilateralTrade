@@ -421,7 +421,9 @@
                                             <div class="content-box">
 
                                                 <div class="date-box">
-                                                    <div class="date">{{ $event['date'] }}</div>
+                                                    <div class="date">
+                                                        <span class="type">{!! \Carbon\Carbon::parse($event['date'])->format('l jS, F Y') !!}</span>
+                                                    </div>
                                                 </div>
 
                                                 <div class="content">

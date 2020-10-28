@@ -3,7 +3,8 @@
 <html lang="en">
 
 <head>
-
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta charset="utf-8">
 
     <title>Welcome to Bilaterial Website</title>
@@ -46,69 +47,15 @@
 
 
 <body>
-
-
-
     <div class="page-wrapper">
 
         <!-- Preloader -->
-
         <div class="preloader">
             <div class="icon"></div>
         </div>
-
-
-
         <!-- Main Header -->
 
         <header class="main-header header-style-one">
-
-            <!-- Header Top -->
-
-            <!--<div class="header-top header-top-one" style="display:none">
-
-                <div class="auto-container">
-
-                    <div class="inner clearfix">
-
-                        <div class="top-left clearfix">
-
-
-
-                            <div class="email"><a href="mailto:support@mygov.com"><span class="icon fa fa-envelope"></span>info@bilaterial.gov.ng</a></div>
-
-                        </div>
-
-
-
-                        <div class="mid-text"><span>Visiting London?</span> Find events, residents and more.</div>
-
-
-
-                        <div class="top-right clearfix">
-
-                            <div class="phone"><a href="tel:18001234567"><span class="icon fa fa-phone-alt"></span>call on: 1800 123 45 67</a></div>
-
-                            <div class="hours">
-
-                                <div class="hours-btn">Open: Mondays - Fridays: 8am - 4pm<span class="arrow flaticon-down-arrow"></span></div>
-
-
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>-->
-
-
-
-            <!-- Header Upper -->
-
             <div class="header-upper">
 
                 <div class="auto-container">
@@ -150,12 +97,12 @@
                                         <li class="current"><a href="/" class="ml-1">Home</a></li>
                                         <li class=""><a href="/ourevent">Events & Activities</a></li>
 
-                                        <li class=""><a href="/downloads">MOU's & Agreements</a></li>
-                                        <li class=""><a href="/about">About</a>
-
-                                        </li>
+                                        <li class=""><a href="/mous&agreements">MOU's & Agreements</a></li>
+                                        <li class=""><a href="/about">About</a></li>
 
                                         <li><a href="/contactus">Contact</a></li>
+
+                                        <li class=""><a href="/login">Login</a></li>
 
                                     </ul>
 
@@ -172,40 +119,36 @@
                         <div class="other-links clearfix">
 
                             <!--Language-->
-
-
-
                             <!--Social Links-->
 
                             <div class="social-links-one">
 
                                 <ul class="clearfix">
 
-                                    <li><a href="#" class="has-tooltip"><span class="fab fa-facebook-f"></span><div class="c-tooltip"><div class="tooltip-inner">Facebook</div></div></a></li>
+
+
+                                    <li>
+                                        <a href="#" class="has-tooltip">
+                                            <span class="fab fa-facebook-f"></span>
+                                            <div class="c-tooltip">
+                                                <div class="tooltip-inner">
+                                                    Facebook
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
 
                                     <li><a href="#" class="has-tooltip"><span class="fab fa-twitter"></span><div class="c-tooltip"><div class="tooltip-inner">Twitter</div></div></a></li>
 
                                     <li><a href="#" class="has-tooltip"><span class="fab fa-linkedin-in"></span><div class="c-tooltip"><div class="tooltip-inner">Linkedin</div></div></a></li>
 
                                 </ul>
-
                             </div>
-
-
-
                         </div>
-
-
-
                     </div>
-
                 </div>
-
             </div>
-
             <!--End Header Upper-->
-
-
 
             <!-- Sticky Header  -->
 
@@ -359,7 +302,7 @@
 
                                 <ul class="num-links">
 
-                                    <li><a href="/downloads">MOU's & Agreements</a></li>
+                                    <li><a href="/mous&agreements">MOU's & Agreements</a></li>
 
 
 

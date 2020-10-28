@@ -142,7 +142,8 @@
                                                     :items="[
                                                         'Meeting',
                                                         'Training',
-                                                        'Conference'
+                                                        'Conference',
+                                                        'Workshop'
                                                     ]"
                                                     v-model="data.eventType"
                                                     outlined
@@ -279,7 +280,8 @@
                                                     :items="[
                                                         'Meeting',
                                                         'Training',
-                                                        'Conference'
+                                                        'Conference',
+                                                        'Workshop'
                                                     ]"
                                                     v-model="editData.eventType"
                                                     outlined
