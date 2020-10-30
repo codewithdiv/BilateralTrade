@@ -67,7 +67,7 @@
                         <div class="logo-box clearfix">
 
                             <div class="logo">
-                                <a href="index.html"><img src="/images/nigerialogo.png" alt="Logo" title=""></a><span class="ml-2" style="font-size:18px">Bilaterial</span>
+                                <a href="index.html"><img src="/images/nigerialogo.png" alt="Logo" title=""></a><span class="ml-2" style="font-size:18px">Bilateral</span>
                             </div>
 
                             <div class="search-btn search-btn-one"><button type="button" class=""><span class="txt"></span> </button></div>
@@ -97,7 +97,7 @@
                                         <li class="current"><a href="/" class="ml-1">Home</a></li>
                                         <li class=""><a href="/ourevent">Events & Activities</a></li>
 
-                                        <li class=""><a href="/mous&agreements">MOU's & Agreements</a></li>
+                                        <li class=""><a href="/mous&agreements">Agreements & MOU's</a></li>
                                         <li class=""><a href="/about">About</a></li>
 
                                         <li><a href="/contactus">Contact</a></li>
@@ -302,7 +302,7 @@
 
                                 <ul class="num-links">
 
-                                    <li><a href="/mous&agreements">MOU's & Agreements</a></li>
+                                    <li><a href="/mous&agreements">Agreements & MOU's</a></li>
 
 
 

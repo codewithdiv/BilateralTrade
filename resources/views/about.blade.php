@@ -12,8 +12,8 @@
 
                     <div class="inner-container clearfix">
 
-                        <h1>Bilateral Department</h1>
-                         <div class="lower-text" style="margin-top:-1px"><h4>(of Trade Division)</h4></div>
+                        <h1>Bilateral Division</h1>
+                         <div class="lower-text" style="margin-top:-1px"><h4>(of Trade Department)</h4></div>
 
                     </div>
 
@@ -34,7 +34,7 @@
 
                 <div class="sec-title with-separator centered">
 
-                    <h2>About The Department</h2>
+                    <h2>About The Division</h2>
 
 
                     <div class="lower-text" style="margin-top:-30px">Facilitate the achievement of rapid economic development and benefits accruable from international trade.</div> <hr>

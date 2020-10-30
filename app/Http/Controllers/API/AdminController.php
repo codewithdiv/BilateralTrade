@@ -35,7 +35,8 @@ class AdminController extends Controller
             'venue' => 'required',
             'eventType' => 'required',
             'date' => 'required',
-            'description' => 'required'
+            'description' => 'required',
+            'eventProgram' => 'required'
         ]);
 
         $event = Event::create([
@@ -44,6 +45,7 @@ class AdminController extends Controller
             'date' => $request['date'],
             'eventType' => $request['eventType'],
             'description' => $request['description'],
+            'eventProgram' => $request['eventProgram'],
             // 'user_id' => $user->id
         ]);
 
@@ -57,7 +59,8 @@ class AdminController extends Controller
             'venue' => 'required',
             'eventType' => 'required',
             'date' => 'required',
-            'description' => 'required'
+            'description' => 'required',
+            'eventProgram' => 'required'
         ]);
 
         $data = [
@@ -65,7 +68,8 @@ class AdminController extends Controller
             'venue' => $request['venue'],
             'eventType' => $request['eventType'],
             'date' => $request['date'],
-            'description' => $request['description']
+            'description' => $request['description'],
+            'eventProgram' => $request['eventProgram']
         ];
 
         $event = Event::where('id', $request->id)->update($data);
@@ -75,8 +79,38 @@ class AdminController extends Controller
         $this->validate($request, [
             'id' => 'required',
         ]);
+
+        $fileName = $request->imageName;
+        $filePath = public_path().'/uploads/'.$fileName;
+        if (file_exists($filePath)) {
+            @unlink($filePath);
+        }
+
         return Event::where('id', $request->id)->delete();
         return ['message' => 'Event deleted Successfully'];
+    }
+
+    public function uploadProgram(Request $request){
+        $this->validate($request, [
+            'file' => 'required|mimes:pdf',
+        ]);
+        $eventProgram = time().'.'.$request->file->extension();
+        $request->file->move(public_path('uploads'), $eventProgram);
+        return $eventProgram;
+    }
+
+    public function deleteProgram(Request $request){
+        $fileName = $request->imageName;
+        $this->deleteProgramFromServer($fileName);
+        return 'done';
+    }
+
+    public function deleteProgramFromServer($fileName){
+        $filePath = public_path().'/uploads/'.$fileName;
+        if (file_exists($filePath)) {
+            @unlink($filePath);
+        }
+        return;
     }
 
     // User section

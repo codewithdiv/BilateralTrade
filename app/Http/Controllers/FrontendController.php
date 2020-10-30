@@ -24,4 +24,13 @@ class FrontendController extends Controller
 
         return view('welcome', compact('events'));
     }
+
+    public function eventDetails($eventDetail){
+
+        $eventDetail = Event::findOrFail($eventDetail);
+        return view('details', ['eventDetail' => $eventDetail]);
+
+        // $eventDetail = Event::orderBy('id', 'desc')->get();
+        // return view('details', ['eventDetail'=>$eventDetail]);
+    }
 }

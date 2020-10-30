@@ -144,10 +144,11 @@ p {
 }
 
 .text {
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1.6em;
     font-weight: 500;
     margin: 0 0;
+    color: #fff;
 }
 
 ::-webkit-input-placeholder {
@@ -14923,3 +14924,7 @@ p.event-description{
     font-size: 18px;
 }
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+.desk{
+    color: #fff;
+    font-size: 17px;
+}

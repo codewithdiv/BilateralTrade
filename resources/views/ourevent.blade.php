@@ -52,10 +52,7 @@
                                         <div class="mt-2 card-text">
                                             <span class="event-type">Event Type:</span> <span class="type mr-5">{{ $event['eventType'] }}</span>
                                         </div>
-                                        <div class="mt-3">
-                                            <h5><small class="text-muted">Event Description</small></h5>
-                                            <p class="event-description card-footer">{{ $event['description'] }}</p>
-                                        </div>
+                                        <a class="mt-3 btn btn-success" href="{{ route('eventDetails', $event->id) }}">Event Details</a>
                                     </div>
                                 </div>
                             </div>

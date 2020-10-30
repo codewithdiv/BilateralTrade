@@ -27,6 +27,8 @@ Route::get('/mous&agreements', function () {
     return view('downloads');
 });
 
+Route::get('/ourevent/{eventDetail}', 'FrontendController@eventDetails')->name('eventDetails');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

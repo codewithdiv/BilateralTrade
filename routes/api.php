@@ -21,6 +21,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::apiResources(['events' => 'API\AdminController']);
 Route::post('update_event', 'API\AdminController@updateEvent');
 Route::post('delete_event', 'API\AdminController@deleteEvent');
+Route::post('upload_program', 'API\AdminController@uploadProgram')->name('uplaodProgram');
+Route::post('delete_program', 'API\AdminController@deleteProgram')->name('deleteProgram');
 
 // Users
 Route::get('get_users', 'API\AdminController@getUsers');
@@ -29,8 +31,8 @@ Route::post('edit_user', 'API\AdminController@editUser');
 Route::post('delete_user', 'API\AdminController@deleteUser');
 
 // Document
-Route::get('get_document', 'API\AdminController@getDocument');
-Route::post('upload_document', 'API\AdminController@uploadDocument');
+Route::get('get_document', 'API\AdminController@getDocument')->name('getDocument');
+Route::post('upload_document', 'API\AdminController@uploadDocument')->name('uploadDocument');
 Route::post('delete_file', 'API\AdminController@deleteFile');
 Route::post('create_document', 'API\AdminController@createDocument');
 Route::post('edit_document', 'API\AdminController@editDocument');

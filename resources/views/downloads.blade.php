@@ -13,7 +13,7 @@
 
                     <div class="inner-container clearfix">
 
-                        <h1>MoU's & Agreements</h1>
+                        <h1>Agreements & MOU's</h1>
 
 
 
@@ -38,7 +38,7 @@
                             <div class="content-inner">
                                 <div class="service-details">
                                     <div class="download-links">
-                                        <h3>Download MoU's & Agreements</h3>
+                                        <h3>Download Agreements & MOU's</h3>
 
                                         <div class="limiter">
                                             <div class="container-table100">
