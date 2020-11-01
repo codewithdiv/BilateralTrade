@@ -79,9 +79,10 @@ class AdminController extends Controller
         $this->validate($request, [
             'id' => 'required',
         ]);
+        // $currentEventProgram = $event->eventProgram;
 
-        $fileName = $request->imageName;
-        $filePath = public_path().'/uploads/'.$fileName;
+        $fileName = $request->eventProgram;
+        $filePath = public_path().$fileName;
         if (file_exists($filePath)) {
             @unlink($filePath);
         }
@@ -218,6 +219,11 @@ class AdminController extends Controller
             'remarks' => $request['remarks'],
             'years' => $request['years'],
         ];
+        $fileName = $request->document;
+        $filePath = public_path().$fileName;
+        if (file_exists($filePath)) {
+            @unlink($filePath);
+        }
         $document = Document::where('id', $request->id)->update($data);
         return $document;
     }
@@ -235,8 +241,8 @@ class AdminController extends Controller
          $this->validate($request, [
             'id' => 'required',
         ]);
-        $fileName = $request->imageName;
-        $filePath = public_path().'/uploads/'.$fileName;
+        $fileName = $request->document;
+        $filePath = public_path().$fileName;
         if (file_exists($filePath)) {
             @unlink($filePath);
         }

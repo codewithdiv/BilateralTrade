@@ -276,7 +276,7 @@
                         </v-textarea>
                       </v-col>
                       <v-col v-show="editmode" cols="12" sm="12" md="12">
-                        <Upload
+                        <Upload v-show="isDocumentNew"
                           multiple
                           ref="editDataUploads"
                           :headers="{
@@ -309,11 +309,11 @@
                           <img :src="`${editData.eventProgram}`" />
                           <div
                             class="demo-upload-list-cover"
-                            v-show="!editmode"
+                            v-show="editmode"
                           >
                             <Icon
                               type="ios-trash-outline"
-                              @click.prevent="deleteFile()"
+                              @click.prevent="deleteFile(false)"
                             ></Icon>
                           </div>
                         </div>
@@ -324,7 +324,7 @@
                 </v-card-text>
                 <v-card-actions>
                   <v-spacer></v-spacer>
-                  <v-btn color="error darken-4" dark @click="dialog = false">
+                  <v-btn color="error darken-4" dark @click="closeEditDialog">
                     Close
                   </v-btn>
                   <v-btn
@@ -456,16 +456,18 @@ export default {
     isAdding: false,
     isDeleting: false,
     loader: null,
-    token: ''
+    token: '',
+    isDocumentNew: false,
+    isEditingEvent: false,
   }),
   methods: {
     handleSuccess(res, file) {
       console.log(`/uploads/${res}`);
-      // res = `/uploads/${res}`;
-      this.data.eventProgram = res;
-      if (this.isEditingItem) {
-        return (this.editData.eventProgram = res);
+      res = `/uploads/${res}`;
+      if (this.isEditingEvent) {
+          return (this.editData.eventProgram = res);
       }
+      this.data.eventProgram = res;
     },
     handleError(res, file) {
       Swal.fire(
@@ -507,6 +509,11 @@ export default {
       this.editData = event;
       this.editData = Object.assign({}, event);
       this.index = index;
+      this.isEditingEvent = true;
+    },
+    closeEditDialog() {
+        this.isEditingEvent = false;
+        this.dialog = false;
     },
     async addEvent() {
       console.log("Adding...");
@@ -577,17 +584,17 @@ export default {
     },
 
     async deleteFile(isAdd = true) {
-      let document;
+      let eventProgram;
       if (!isAdd) {
         //   For Editing
-        this.isIconImageNew = true;
-        document = this.editData.document;
-        this.editData.document = "";
+        this.isDocumentNew = true;
+        eventProgram = this.editData.eventProgram;
+        this.editData.eventProgram = "";
         this.$refs.editDataUploads.clearFiles();
-        console.log(this.editData.document);
+        console.log(this.editData.eventProgram);
       } else {
-        document = this.data.document;
-        this.data.document = "";
+        eventProgram = this.data.eventProgram;
+        this.data.eventProgram = "";
         this.$refs.uploads.clearFiles();
       }
       const res = await this.callApi("post", "api/delete_program", {
@@ -614,9 +621,7 @@ export default {
         confirmButtonText: "Yes, delete it!"
       }).then(result => {
         if (result.value) {
-          this.callApi("post", "api/delete_event", event, {
-        imageName: eventProgram
-      }).then(() => {
+          this.callApi("post", "api/delete_event", event).then(() => {
             Swal.fire(
               "Deleted!",
               "Event has been deleted Successfully.",
